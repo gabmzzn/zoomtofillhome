@@ -120,6 +120,7 @@ img {
   flex-wrap: wrap;
 }
 
+
 .support img {
   display: block;
   margin: auto;
@@ -129,6 +130,18 @@ img {
 
 .support {
   margin: 10px 0 30px 0;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  transform: scale(0.85);
+}
+
+.popup img {
+  margin: 0 10px;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
 .video-example {
@@ -161,8 +174,6 @@ img {
     0px 0px 3px black;
 }
 
-.shortcuts img,
-.persistent img,
 .manual img,
 .player-button img {
   border: 1px solid white;
@@ -214,43 +225,6 @@ img {
 
 .button-group svg:hover {
   opacity: 100%;
-}
-
-.paypal {
-  background: transparent;
-  color: rgb(255, 255, 255);
-  border: 1px solid #8a8a8a5d;
-  padding: 0 15px;
-  display: inline-block;
-  text-align: center;
-  line-height: 35px;
-  border-radius: 25px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: default;
-  margin-left: 3px;
-  margin-right: 3px;
-  text-decoration: none;
-  width: 210px;
-  padding: 0px 12px 0px 18px;
-  line-height: 0px;
-  border-radius: 100px;
-}
-
-.paypal:hover {
-  background: rgba(0, 140, 255, 0.25);
-  transition: all 400ms;
-}
-
-.paypal:not(:hover) {
-  background: transparent;
-  transition: all 400ms;
-}
-
-.paypal:active {
-  background: rgba(0, 140, 255, 0.5);
-  transition: all 100ms;
 }
 
 @media only screen and (max-height: 900px) {
