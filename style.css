@@ -174,15 +174,15 @@ img {
 }
 
 .store {
-  margin: 5px 20px;
+  margin: 10px 25px;
   border: 1px solid rgb(210, 210, 210);
-  background-color: rgba(245, 245, 245);
+  background-color: rgb(245, 245, 245);
   border-radius: 15px;
   transition: background-color 300ms;
 }
 
 .store:hover {
-  background-color: rgba(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .manual img,
