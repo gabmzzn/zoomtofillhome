@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=1100">
     <title>Zoom to Fill - Ultrawide Video</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-utilities.min.css">
 </head>
 
 <img class="background" src="imgs/patternloop.jpg">
@@ -31,13 +29,24 @@
                 <p>Zoom to Fill is a web browser extension for chromium browsers, as a solution for incorrect aspect
                     ratio
                     videos on ultrawide monitors.</p>
+                <p>
+                    Sometimes, videos have fixed black bars, usually this isn't a problem, but when you are watching
+                    them on unconventional aspect ratios (like 21:9) so much screen space can be wasted by a black area,
+                    making the
+                    video look on the center of the screen instead of displaying truly on fullscreen. An concrete
+                    example of what I mean is shown bellow.
+                </p>
                 <p>With around 60.000 users and counting, this extension offers intuitive user experience to handle
                     video
                     aspect ratio on major streaming platforms like:</p>
                 <div class="support"><img src="imgs/logos.png"></div>
             </div>
             <div>
-                <h1>How does it work?</h1>
+                <h1>So, how does it work?</h1>
+                <p>
+                    The extension calculates the relation between the true video size and the screen size and gets a
+                    number that is used to scale the video accordingly, eliminating black bars of the video.
+                </p>
                 <p>The usage is very straight foward, mainly, the extension shows it's magic by just clicking on the
                     player button inserted on the video player, as well manually adjusting the zoom by
                     scrolling on the button too.</p>
@@ -53,18 +62,17 @@
                     </div>
                     <video src="vids/birdn.m4v" autoplay loop playsinline muted></video>
                 </div>
-                <div style="display: flex;justify-content: end;margin-right: 27px;">
+                <div style="display: flex;justify-content: end;margin-right: 42px;">
                     <span style="font-size: 23px;"><b>Click to zoom</b> or <b>Scroll on the button</b> to manually
                         adjust <img style="width: 25px;margin-bottom: 5px;" src="imgs/arrow.png"> </span>
                 </div>
                 <div class="manual" style="display: flex;">
-                    <p style="margin-top: 28px;">To use it, you have to <b>place your cursor on the button</b> and then
-                        use the<br>
-                        <b>scroll</b> of your mouse to manually adjust (trackpad gestures also work), <br> you can also
-                        use
-                        the
-                        new <b>popup controls</b> or
-                        scroll on the scale number to
+                    <p style="margin-top: 28px;">To use the manual adjusment, you have to <b>place your cursor on the
+                            button</b> and then
+                        use the
+                        <b>scroll</b> of your mouse to manually adjust.
+                        <b>Popup controls</b> or
+                        scrolling on the scale number also
                         achieve the same
                         functionality.
                     </p>
@@ -72,83 +80,18 @@
                 </div>
             </div>
             <div>
-                <h2>New Popup addition</h2>
-                <p style="font-size: 17.7px;">The extension now has incorporated a popup with tons of functionality that
-                    I
-                    will disclose over
-                    the
-                    page.</p>
-                <div style="display: flex; justify-content: center;">
-                    <img style="margin: 5px 20px;border: 1px solid white;border-radius: 10px;" src="imgs/popup.png">
+                <h2>Popup interface</h2>
+                <p style="font-size: 17.7px;">The extension has incorporated a popup with tons of functionality.</p>
+                <div class="popup">
+                    <img src="imgs/popup.png">
+                    <img src="imgs/popup2.png">
+                    <img src="imgs/popup3.png">
                 </div>
                 <p>The main popup page shows clear information about your monitor and video that you are watching.
                     <br>
                     Comes with simple controls to manually adjust your desired scale, and lower buttons let you choose a
-                    predefined aspect ratio scale. The <b>1.00</b> button resets the scale to the original
-                    size of the video.
+                    predefined aspect ratio scale.
                 </p>
-                <p style="margin-top: -5px">Remeber to pin the popup button to your toolbar!</p>
-            </div>
-            <div>
-                <h2>Persistent mode</h2>
-                <div class="persistent" style="display: flex;align-items: center;">
-                    <p style="margin-top: 22px;">
-                        You can now enable persistent mode on settings, this means that your selected scale level
-                        <b>will
-                            persist through the
-                            tab
-                            session</b>.
-                        <br>
-                        For example, you are
-                        watching a
-                        series with the zoom activated, when you get to watch another episode your <b>zoom will
-                            persist</b>.
-                    </p>
-                    <img style="height: 100%;" src="imgs/persistent.png">
-                </div>
-            </div>
-            <div>
-                <h2>Keyboard shortcuts</h2>
-                <p>Shortcuts to your preferred actions were added!</p>
-                <div class="shortcuts">
-                    <div style="display: flex;justify-content: center;">
-                        <img src="imgs/shortcuts.png">
-                        <img style="height: 231px;filter: contrast(1.2);" src="imgs/shortcutsc.png">
-                    </div>
-
-                    <p>You can now configure your personalized keyboard shortcuts on:</p>
-                    <li><span>Popup settings (for single key activation)</span></li>
-                    <li><span>Keyboard shortcuts of Extensions panel (for multiple key combos. Can be accesed
-                            from
-                            popup)</span></li>
-                </div>
-            </div>
-            <div>
-                <h2 style="margin-top: 25px;">Support for more screen resolutions</h2>
-                <p>The zoom algorithm has been reworked.<br>
-                    Doesn't matter the screen resolution or aspect ratio you have, the aspect ratio you choose to a
-                    video will
-                    be applied now correctly regarthless the aspect ratio of your monitor.
-                    This is specially good for those with <b>unconventional screens</b> with aspect ratio like 3:2,
-                    32:9,
-                    and so on.
-                </p>
-            </div>
-            <div>
-                <h2>Player button default ratio selection</h2>
-                <div class="player-button" style="display: flex;align-items: center;">
-                    <div>
-                        <p>You can also select which is the predefined aspect ratio you <br>prefer to
-                            apply when
-                            clicking on
-                            the player extension button.
-                        <p style="margin-top: -5px;">If you select the <b>Off</b> option, this will disable the button
-                            entire for <br>all websites while
-                            mantaining zoom functionality on the popup and keyboard shortcuts of course.</p>
-                        </p>
-                    </div>
-                    <img style="height: 100%;" src="imgs/playerbutton.png">
-                </div>
             </div>
         </div>
         <script type="text/javascript" src="demo.js"></script>
