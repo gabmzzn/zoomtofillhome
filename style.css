@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  transition: all 300ms;
 }
 
 body {
@@ -120,7 +121,6 @@ img {
   flex-wrap: wrap;
 }
 
-
 .support img {
   display: block;
   margin: auto;
@@ -174,10 +174,22 @@ img {
     0px 0px 3px black;
 }
 
+.store {
+  margin: 0 20px;
+  border: 1px solid rgb(210, 210, 210);
+  background-color: rgba(245, 245, 245);
+  border-radius: 15px;
+  transition: background-color 300ms;
+}
+
+.store:hover {
+  background-color: rgba(255, 255, 255);
+}
+
 .manual img,
 .player-button img {
   border: 1px solid white;
-  border-radius: 17px;
+  border-radius: 18px;
   margin-left: 5px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -197,30 +209,12 @@ img {
   z-index: 1;
 }
 
-.button-group {
-  text-shadow:
-    0px 0px 3px black,
-    0px 0px 3px black,
-    0px 0px 3px black,
-    0px 0px 3px black,
-    0px 0px 3px black,
-    0px 0px 3px black;
-}
-
 .button-group svg {
   fill: white;
   opacity: 70%;
   transition: all 200ms;
   cursor: pointer;
-}
-
-.svg-shadow {
-  box-shadow:
-    0px 0px 5px black,
-    0px 0px 5px black,
-    0px 0px 5px black,
-    0px 0px 5px black,
-    0px 0px 5px black;
+  filter: drop-shadow(0px 0px 1px black);
 }
 
 .button-group svg:hover {

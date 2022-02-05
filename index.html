@@ -29,11 +29,15 @@
                 <p>Zoom to Fill is a web browser extension for chromium browsers, as a solution for incorrect aspect
                     ratio
                     videos on ultrawide monitors.</p>
+                <p style="display: flex;align-items: center;">You can access the store link of the extension here:
+                    <a href="https://chrome.google.com/webstore/detail/zoom-to-fill-ultrawide-vi/adpjimagbfpknkodpofjphpbdlfkeiho"
+                        target="_blank"><img class="store" src="imgs/store.png"></a>
+                </p>
                 <p>
                     Sometimes, videos have fixed black bars, usually this isn't a problem, but when you are watching
                     them on unconventional aspect ratios (like 21:9) so much screen space can be wasted by a black area,
                     making the
-                    video look on the center of the screen instead of displaying truly on fullscreen. An concrete
+                    video look on the center of the screen instead of displaying truly on fullscreen. A concrete
                     example of what I mean is shown bellow.
                 </p>
                 <p>With around 60.000 users and counting, this extension offers intuitive user experience to handle
@@ -44,20 +48,20 @@
             <div>
                 <h1>So, how does it work?</h1>
                 <p>
-                    The extension calculates the relation between the true video size and the screen size and gets a
-                    number that is used to scale the video accordingly, eliminating black bars of the video.
+                    The extension calculates the relation between the true video size and the screen size and gets the
+                    scale that is gonna be applied to the video accordingly, eliminating black bars of the video.
                 </p>
-                <p>The usage is very straight foward, mainly, the extension shows it's magic by just clicking on the
+                <p style="margin-bottom: 40px;">The usage is very straight foward, mainly, the extension shows it's
+                    magic by just clicking on the
                     player button inserted on the video player, as well manually adjusting the zoom by
                     scrolling on the button too.</p>
                 <div class="video-example">
                     <span id="state">Original</span>
                     <div class="button-group">
                         <svg width="60px" height="60px" viewBox="0 0 36 36">
-                            <use class="svg-shadow" xlink:href="#svg-zoom"></use>
-                            <path id="svg-zoom" d="M25,18h-2v3h-3v2h5V18z M13,15h3v-2h-5v5h2V15z
-                                                 M27,9H9c-1.1,0-2,0.9-2,2v14c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V11C29,9.9,28.1,9,27,9z
-                                                 M27,25H9V11h18V25z" class="ytp-svg-fill"></path>
+                            <path
+                                d="M25,18h-2v3h-3v2h5V18z M13,15h3v-2h-5v5h2V15z M27,9H9c-1.1,0-2,0.9-2,2v14c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V11C29,9.9,28.1,9,27,9z M27,25H9V11h18V25z">
+                            </path>
                         </svg>
                     </div>
                     <video src="vids/birdn.m4v" autoplay loop playsinline muted></video>
@@ -67,7 +71,7 @@
                         adjust <img style="width: 25px;margin-bottom: 5px;" src="imgs/arrow.png"> </span>
                 </div>
                 <div class="manual" style="display: flex;">
-                    <p style="margin-top: 28px;">To use the manual adjusment, you have to <b>place your cursor on the
+                    <p style="margin-top: 35px;">To use the manual adjusment, you have to <b>place your cursor on the
                             button</b> and then
                         use the
                         <b>scroll</b> of your mouse to manually adjust.
@@ -76,12 +80,12 @@
                         achieve the same
                         functionality.
                     </p>
-                    <img style="height: 100%;margin-top: 30px;" src="imgs/manual.png">
+                    <img style="height: 100%;margin-top: 45px;" src="imgs/manual.png">
                 </div>
             </div>
             <div>
                 <h2>Popup interface</h2>
-                <p style="font-size: 17.7px;">The extension has incorporated a popup with tons of functionality.</p>
+                <p style="font-size: 17.7px;">The extension have incorporated a popup with tons of functionality.</p>
                 <div class="popup">
                     <img src="imgs/popup.png">
                     <img src="imgs/popup2.png">
@@ -91,6 +95,31 @@
                     <br>
                     Comes with simple controls to manually adjust your desired scale, and lower buttons let you choose a
                     predefined aspect ratio scale.
+                </p>
+
+                <p>On the settings section, you can configure different options such as:
+                    <li><b>Persistent zoom mode:</b>
+                        <ul>This means that the selected scale level will persist through the tab
+                            session.
+                            <br>For example, you are watching a series with the zoom activated, when you get to watch
+                            another
+                            episode your zoom will
+                            persist.
+                        </ul>
+                    </li>
+                    <li><b>Player button default ratio:</b>
+                        <ul>This means that you can also select which is the predefined aspect
+                            ratio you
+                            prefer to apply when clicking on the player extension button.</ul>
+                    </li>
+                    <li><b>Zoom transition speed:</b>
+                        <ul>
+                            This simply means that the smoothness of the transition of the scale can
+                            be adjusted.</ul>
+                    </li>
+                    <li><b>Keyboard shortcuts:</b>
+                        <ul>Intuitive configuration for different shortcuts can be set up</ul>
+                    </li>
                 </p>
             </div>
         </div>
