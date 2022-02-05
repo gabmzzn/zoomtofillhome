@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  background: #e9e8eb;
+  margin: 0;
+  color: rgb(78, 78, 78);
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  margin: 15px 0 -5px 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p, li {
+  font-size: large;
+  padding-left: 3px;
+  line-height: 1.5;
+}
+
+li span {
+  position: relative;
+  left: -7px;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 925px;
+  margin: auto;
+  display: flex;
+  transform: scale(0.7);
+  opacity: 0%;
+  filter: blur(10px);
+}
+
+.title p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 3;
+  margin: 0;
+  margin-left: 26px;
+  color: rgb(65, 65, 65);
+}
+
+.title b {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.title a {
+  margin-left: 6px;
+}
+
+.box {
+  margin: 1.5% 1.5% 15% 1.5%;
+  padding: 30px 55px 55px 55px;
+  box-shadow: 0 45px 75px -25px rgb(0 0 0 / 40%);
+  border-radius: 10px;
+  width: 950px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  backdrop-filter: blur(12px);
+  border: 1px solid #ffffffc9;
+  color: rgb(60, 60, 60);
+  transform: scale(0.7);
+  opacity: 0%;
+  /* filter: blur(10px); */
+  background-color: #e9e8eb;
+}
+
+.background {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* filter: brightness(0.95); */
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.support img {
+  display: block;
+  margin: auto;
+  width: 95%;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.support {
+  margin: 10px 0 30px 0;
+}
+
+.video-example {
+  overflow: hidden;
+  margin: 3px auto;
+  width: 915px;
+  height: 383px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.video-example video {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: auto;
+  height: 100%;
+  transition: all 300ms;
+}
+
+.video-example span {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  font-size: 25px;
+  margin: 5px 14px;
+  text-shadow: 0px 0px 3px black,
+    0px 0px 3px black,
+    0px 0px 3px black;
+}
+
+.shortcuts img,
+.persistent img,
+.manual img,
+.player-button img {
+  border: 1px solid white;
+  border-radius: 17px;
+  margin-left: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.player-button img {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  position: absolute;
+  margin-top: 327px;
+  margin-left: 854px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.button-group {
+  text-shadow:
+    0px 0px 3px black,
+    0px 0px 3px black,
+    0px 0px 3px black,
+    0px 0px 3px black,
+    0px 0px 3px black,
+    0px 0px 3px black;
+}
+
+.button-group svg {
+  fill: white;
+  opacity: 70%;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.svg-shadow {
+  box-shadow:
+    0px 0px 5px black,
+    0px 0px 5px black,
+    0px 0px 5px black,
+    0px 0px 5px black,
+    0px 0px 5px black;
+}
+
+.button-group svg:hover {
+  opacity: 100%;
+}
+
+.paypal {
+  background: transparent;
+  color: rgb(255, 255, 255);
+  border: 1px solid #8a8a8a5d;
+  padding: 0 15px;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: default;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-decoration: none;
+  width: 210px;
+  padding: 0px 12px 0px 18px;
+  line-height: 0px;
+  border-radius: 100px;
+}
+
+.paypal:hover {
+  background: rgba(0, 140, 255, 0.25);
+  transition: all 400ms;
+}
+
+.paypal:not(:hover) {
+  background: transparent;
+  transition: all 400ms;
+}
+
+.paypal:active {
+  background: rgba(0, 140, 255, 0.5);
+  transition: all 100ms;
+}
+
+@media only screen and (max-height: 900px) {
+  html {
+    zoom: 0.85;
+  }
+}
