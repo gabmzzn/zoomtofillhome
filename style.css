@@ -82,18 +82,15 @@ img {
   box-shadow: 0 45px 75px -25px rgb(0 0 0 / 40%);
   border-radius: 10px;
   width: 950px;
-  background-color: gray;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background-color: transparent;
+  opacity: 0%;
   backdrop-filter: blur(12px);
   border: 1px solid #ffffffc9;
   color: rgb(60, 60, 60);
   transform: scale(0.7);
-  opacity: 0%;
-  /* filter: blur(10px); */
-  background-color: #e9e8eb;
+  background-color: transparent;
 }
 
 .background {

@@ -78,6 +78,14 @@ function zoom(command) {
 }
 
 setTimeout(() => {
-    document.getElementsByClassName('title')[0].style = 'transform: scale(1); transform-origin: top; opacity: 100%;filter: blur(0px);transition: all 1300ms;'
-    document.getElementsByClassName('box')[0].style = 'transform: scale(1); transform-origin: top; opacity: 100%; background-color: transparent; transition: all 1800ms'
-}, 200) 
+    document.getElementsByClassName('title')[0].style = `
+        opacity: 100%;
+        filter: blur(0px);
+        transform: scale(1); 
+        transition: all 1400ms;`
+    document.getElementsByClassName('box')[0].style = `
+        opacity: 100%; 
+        transform: scale(1); 
+        transform-origin: top;
+        transition: all 1800ms`
+}, 200)
