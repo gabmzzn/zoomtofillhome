@@ -82,10 +82,10 @@ setTimeout(() => {
         opacity: 100%;
         filter: blur(0px);
         transform: scale(1); 
-        transition: all 1400ms;`
+        transition: all 2000ms;`
     document.getElementsByClassName('box')[0].style = `
         opacity: 100%; 
-        transform: scale(1); 
-        transform-origin: top;
-        transition: all 1800ms`
+        filter: blur(0px);
+        margin-top: 0px;
+        transition: all 2000ms`
 }, 200)
