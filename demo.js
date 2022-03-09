@@ -20,23 +20,17 @@ function buttonScroll(event) {
 const video = document.querySelector('video')
 
 function cssScale(scale, transition) {
-    if (!transition) transition = '450ms'
-
     video.style = `transform: scale(${scale}); transition: transform ${transition} ease;`
 
     let status = document.getElementById('state')
-    if (scale == 1) {
-        status.innerText = 'Original'
-    }
-    else {
-        status.innerText = 'Zoomed'
-    }
+    if (scale == 1) status.innerText = 'Original'
+    else status.innerText = 'Zoomed'
 }
 
 function zoomAR(transition) {
     let scale = 1.35
     if (scale !== getCurrentScale()) cssScale(scale, transition)
-    else cssScale(1)
+    else cssScale(1, '450ms')
 }
 
 function zoomManual(command) {
@@ -53,14 +47,15 @@ function zoomManual(command) {
 
 function zoomButton() {
     if (getCurrentScale() == 1) zoomAR()
-    else cssScale(1)
+    else cssScale(1, '450ms')
 }
 
 function getCurrentScale() {
-    if (!video.getAttribute('style')) return 1
-    return parseFloat(video.getAttribute('style').substring(
-        video.getAttribute('style').indexOf('(') + 1,
-        video.getAttribute('style').indexOf(')'))
+    let videoStyle = video.getAttribute('style')
+    if (!videoStyle) return 1
+    return parseFloat(videoStyle.substring(
+        videoStyle.indexOf('(') + 1,
+        videoStyle.indexOf(')'))
     )
 }
 
