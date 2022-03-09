@@ -1,6 +1,3 @@
-let styleX = new CSSStyleSheet()
-document.adoptedStyleSheets = [styleX]
-const video = document.getElementsByTagName('video')[1]
 const svg = document.getElementsByTagName('svg')[1]
 
 let interval = setInterval(() => { zoomButton() }, 1900)
@@ -20,14 +17,12 @@ function buttonScroll(event) {
     if (event.deltaY > 0) zoomManual('-')
 }
 
-let styleDemo = document.createElement('style')
+const video = document.querySelector('video')
 
 function cssScale(scale, transition) {
     if (!transition) transition = '450ms'
-    styleX.replaceSync(
-        `.video-example video { transform: scale(${scale}) !important;transition: transform ${transition} ease !important;}`)
-    styleDemo.innerHTML = innerHTML = `.video-example video { transform: scale(${scale}) !important;transition: transform ${transition} ease !important;}`
-    document.head.appendChild(styleDemo)
+
+    video.style = `transform: scale(${scale}); transition: transform ${transition} ease;`
 
     let status = document.getElementById('state')
     if (scale == 1) {
@@ -62,10 +57,10 @@ function zoomButton() {
 }
 
 function getCurrentScale() {
-    if (styleX.cssRules.length == 0) return 1
-    return parseFloat(styleX.cssRules[0].cssText.substring(
-        styleX.cssRules[0].cssText.indexOf('(') + 1,
-        styleX.cssRules[0].cssText.indexOf(')'))
+    if (!video.getAttribute('style')) return 1
+    return parseFloat(video.getAttribute('style').substring(
+        video.getAttribute('style').indexOf('(') + 1,
+        video.getAttribute('style').indexOf(')'))
     )
 }
 
