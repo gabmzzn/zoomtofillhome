@@ -1,3 +1,4 @@
+const video = document.querySelector('video')
 const svg = document.getElementsByTagName('svg')[1]
 
 let interval = setInterval(() => { zoomButton() }, 1900)
@@ -16,8 +17,6 @@ function buttonScroll(event) {
     if (event.deltaY < 0) zoomManual('+')
     if (event.deltaY > 0) zoomManual('-')
 }
-
-const video = document.querySelector('video')
 
 function cssScale(scale, transition) {
     video.style = `transform: scale(${scale}); transition: transform ${transition} ease;`
