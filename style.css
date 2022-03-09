@@ -52,9 +52,9 @@ img {
   width: 925px;
   margin: auto;
   display: flex;
-  transform: scale(0.7);
-  opacity: 0%;
-  filter: blur(12px);
+  /* transform: scale(0.7); */
+  /* opacity: 0%; */
+  /* filter: blur(12px); */
   will-change: opacity, filter, transform;
 }
 
