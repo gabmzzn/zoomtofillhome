@@ -7,7 +7,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   height: 100%;
-  background: #e9e8eb;
+  background: rgb(235, 235, 235);
   margin: 0;
   color: rgb(78, 78, 78);
   transition: all 1s;
@@ -87,12 +87,13 @@ img {
   flex-wrap: nowrap;
   margin-top: 1000px;
   /* opacity: 0%; */
-  backdrop-filter: blur(12px);
-  border: 1px solid #ffffffc9;
+  /* backdrop-filter: blur(12px); */
+  border: 1px solid rgba(255, 255, 255, 0.788);
   color: rgb(60, 60, 60);
   /* transform: scale(0.7); */
   /* filter: blur(10px); */
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: rgb(235, 235, 235);
 }
 
 .background {
