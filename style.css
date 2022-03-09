@@ -55,6 +55,7 @@ img {
   transform: scale(0.7);
   opacity: 0%;
   filter: blur(12px);
+  will-change: opacity, filter, transform;
 }
 
 .title p {
@@ -90,6 +91,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.788);
   color: rgb(60, 60, 60);
   background-color: rgba(235, 235, 235, 0.8);
+  will-change: margin-top;
 }
 
 .background {
