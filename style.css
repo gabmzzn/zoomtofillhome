@@ -86,14 +86,10 @@ img {
   flex-direction: column;
   flex-wrap: nowrap;
   margin-top: 1000px;
-  /* opacity: 0%; */
   /* backdrop-filter: blur(12px); */
   border: 1px solid rgba(255, 255, 255, 0.788);
   color: rgb(60, 60, 60);
-  /* transform: scale(0.7); */
-  /* filter: blur(10px); */
-  /* background-color: transparent; */
-  background-color: rgb(235, 235, 235);
+  background-color: rgba(235, 235, 235, 0.8);
 }
 
 .background {
