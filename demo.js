@@ -66,25 +66,12 @@ function zoom(command) {
     }
 }
 
-// requestAnimationFrame(() => {
-// document.getElementsByClassName('title')[0].style = `
-//     opacity: 100%;
-//     filter: blur(0px);
-//     transform: scale(1); 
-//     transition: all 2000ms;`
-//     document.getElementsByClassName('box')[0].style = `
-//         margin-top: 0px;
-//         transition: all 2000ms`
-// })
+history.scrollRestoration = 'manual'
 
 setTimeout(() => {
     document.getElementsByClassName('title')[0].style = `
         opacity: 100%;
         transform: scale(1);`
     document.getElementsByClassName('box')[0].style = `
-        margin-top: 0px;
-        opacity: 100%;`
+        margin: 1.5% 1.5% 15% 1.5%;`
 }, 300)
-
-//opacity: 100 %
-//filter: blur(0px)

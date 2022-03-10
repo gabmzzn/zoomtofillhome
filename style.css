@@ -84,7 +84,7 @@ img {
   flex-wrap: nowrap;
   border: 1px solid rgba(255, 255, 255, 0.788);
   color: rgb(60, 60, 60);
-  background-color: rgba(235, 235, 235, 0.75);
+  background-color: rgba(245, 245, 245, 0.75);
 }
 
 /* Animation */
@@ -96,8 +96,7 @@ img {
 
 .box {
   margin-top: 1000px;
-  opacity: 0%;
-  transition: margin-top 2s, opacity 2s;
+  transition: margin-top 2s;
 }
 
 .background {
@@ -107,7 +106,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  filter: brightness(0.95);
+  filter: brightness(0.98);
   z-index: -1;
 }
 
@@ -138,10 +137,10 @@ img {
 .popup {
   display: flex;
   justify-content: center;
-  transform: scale(0.85);
 }
 
 .popup img {
+  width: 31%;
   margin: 0 10px;
   border: 1px solid white;
   border-radius: 10px;
