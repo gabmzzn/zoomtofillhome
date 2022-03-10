@@ -74,4 +74,4 @@ setTimeout(() => {
         transform: scale(1);`
     document.getElementsByClassName('box')[0].style = `
         margin-top: 0;`
-}, 10)
+}, 100)
