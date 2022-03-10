@@ -87,23 +87,17 @@ img {
   background-color: rgba(235, 235, 235, 0.75);
 }
 
-
-/* With Animation */
+/* Animation */
 .title {
   opacity: 0%;
-  /* filter: blur(12px); */
   transform: scale(0.7);
-  transition: transform opacity 2000ms;
-  /* will-change: opacity, transform; */
+  transition: transform 2s, opacity 2s;
 }
 
 .box {
   margin-top: 1000px;
   opacity: 0%;
-  /* backdrop-filter: blur(12px);
-  background-color: transparent; */
-  transition: margin-top opacity 2000ms;
-  /* will-change: margin-top, opacity; */
+  transition: margin-top 2s, opacity 2s;
 }
 
 .background {
