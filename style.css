@@ -44,20 +44,6 @@ img {
   height: auto;
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  width: 925px;
-  margin: auto;
-  display: flex;
-  /* transform: scale(0.7); */
-  /* opacity: 0%; */
-  /* filter: blur(12px); */
-  /* will-change: opacity, filter, transform; */
-}
-
 .title p {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -77,6 +63,20 @@ img {
   margin-left: 6px;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 925px;
+  margin: auto;
+  display: flex;
+  transform: scale(0.7);
+  opacity: 0%;
+  filter: blur(12px);
+  will-change: opacity, filter, transform;
+}
+
 .box {
   margin: 1.5% 1.5% 15% 1.5%;
   padding: 30px 55px 55px 55px;
@@ -86,10 +86,10 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  /* margin-top: 1000px; */
-  backdrop-filter: blur(12px);
+  margin-top: 1000px;
   border: 1px solid rgba(255, 255, 255, 0.788);
   color: rgb(60, 60, 60);
+  backdrop-filter: blur(12px);
   background-color: transparent;
   /* background-color: rgba(235, 235, 235, 0.8); */
   will-change: margin-top;
