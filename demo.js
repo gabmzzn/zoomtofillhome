@@ -80,12 +80,10 @@ function zoom(command) {
 setTimeout(() => {
     document.getElementsByClassName('title')[0].style = `
         opacity: 100%;
-        filter: blur(0px);
-        transform: scale(1);
-        transition: all 2000ms;`
+        transform: scale(1);`
     document.getElementsByClassName('box')[0].style = `
         margin-top: 0px;
-        transition: all 2000ms;`
+        opacity: 100%;`
 }, 300)
 
 //opacity: 100 %
