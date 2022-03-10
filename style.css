@@ -55,7 +55,7 @@ img {
   /* transform: scale(0.7); */
   /* opacity: 0%; */
   /* filter: blur(12px); */
-  will-change: opacity, filter, transform;
+  /* will-change: opacity, filter, transform; */
 }
 
 .title p {
@@ -86,11 +86,12 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  margin-top: 1000px;
-  /* backdrop-filter: blur(12px); */
+  /* margin-top: 1000px; */
+  backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.788);
   color: rgb(60, 60, 60);
-  background-color: rgba(235, 235, 235, 0.8);
+  background-color: transparent;
+  /* background-color: rgba(235, 235, 235, 0.8); */
   will-change: margin-top;
 }
 
