@@ -93,14 +93,17 @@ img {
   opacity: 0%;
   /* filter: blur(12px); */
   transform: scale(0.7);
-  will-change: opacity, transform;
+  transition: all 2000ms;
+  /* will-change: opacity, transform; */
 }
 
 .box {
   margin-top: 1000px;
+  opacity: 0%;
   /* backdrop-filter: blur(12px);
   background-color: transparent; */
-  will-change: margin-top;
+  transition: all 2000ms;
+  /* will-change: margin-top, opacity; */
 }
 
 .background {
