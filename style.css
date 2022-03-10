@@ -93,7 +93,7 @@ img {
   opacity: 0%;
   /* filter: blur(12px); */
   transform: scale(0.7);
-  transition: all 2000ms;
+  transition: transform opacity 2000ms;
   /* will-change: opacity, transform; */
 }
 
@@ -102,7 +102,7 @@ img {
   opacity: 0%;
   /* backdrop-filter: blur(12px);
   background-color: transparent; */
-  transition: all 2000ms;
+  transition: margin-top opacity 2000ms;
   /* will-change: margin-top, opacity; */
 }
 
