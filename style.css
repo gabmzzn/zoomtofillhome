@@ -98,8 +98,8 @@ img {
 
 .box {
   margin-top: 1000px;
-  backdrop-filter: blur(12px);
-  background-color: transparent;
+  /* backdrop-filter: blur(12px);
+  background-color: transparent; */
   will-change: margin-top;
 }
 
