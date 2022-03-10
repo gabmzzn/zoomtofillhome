@@ -68,8 +68,10 @@ function zoom(command) {
 
 history.scrollRestoration = 'manual'
 
-document.getElementsByClassName('title')[0].style = `
-    opacity: 100%;
-    transform: scale(1);`
-document.getElementsByClassName('box')[0].style = `
-    margin-top: 0;`
+setTimeout(() => {
+    document.getElementsByClassName('title')[0].style = `
+        opacity: 100%;
+        transform: scale(1);`
+    document.getElementsByClassName('box')[0].style = `
+        margin-top: 0;`
+}, 10)
