@@ -73,5 +73,5 @@ setTimeout(() => {
         opacity: 100%;
         transform: scale(1);`
     document.getElementsByClassName('box')[0].style = `
-        margin: 1.5% 1.5% 15% 1.5%;`
+        margin-top: 0;`
 }, 300)
