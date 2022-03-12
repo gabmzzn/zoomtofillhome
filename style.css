@@ -118,7 +118,7 @@ img {
   flex-wrap: nowrap;
   border: 1px solid var(--box-border);
   background-color: var(--box-background);
-  transition: margin-top 2s, background-color 1s linear, border 1s linear;
+  transition: margin-top 2s;
 }
 
 .background {
@@ -131,7 +131,6 @@ img {
   filter: var(--background-filter);
   opacity: var(--opacity);
   z-index: -1;
-  transition: all 1s;
 }
 
 .content {
@@ -205,7 +204,6 @@ img {
   border: 1px solid rgb(210, 210, 210);
   background-color: rgb(245, 245, 245);
   border-radius: 15px;
-  transition: background-color 300ms;
 }
 
 .store:hover {
