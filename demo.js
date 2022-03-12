@@ -74,7 +74,7 @@ setTimeout(() => {
         transform: scale(1);`
     document.getElementsByClassName('box')[0].style = `
         margin-top: 0;`
-}, 100)
+}, 200)
 
 
 var toggle = document.getElementById("theme-toggle")
