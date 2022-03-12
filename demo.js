@@ -68,14 +68,6 @@ function zoom(command) {
 
 history.scrollRestoration = 'manual'
 
-setTimeout(() => {
-    document.getElementsByClassName('title')[0].style = `
-        opacity: 100%;
-        transform: scale(1);`
-    document.getElementsByClassName('box')[0].style = `
-        margin-top: 0;`
-}, 200)
-
 
 var toggle = document.getElementById("theme-toggle")
 
@@ -94,4 +86,12 @@ toggle.onclick = function () {
 
     document.documentElement.setAttribute('data-theme', targetTheme)
     localStorage.setItem('theme', targetTheme)
+}
+
+window.onload = () => {
+    document.getElementsByClassName('title')[0].style = `
+        opacity: 100%;
+        transform: scale(1);`
+    document.getElementsByClassName('box')[0].style = `
+        margin-top: 0;`
 }
