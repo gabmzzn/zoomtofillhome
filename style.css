@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
 
+html[data-theme='light'] {
+  --background-color: rgb(235, 235, 235);
+  --title-color: rgb(78, 78, 78);
+  --text-color: rgb(65, 65, 65);
+  --box-border: rgba(255, 255, 255, 0.75);
+  --box-background: rgba(245, 245, 246, 0.75);
+  --background-filter: brightness(0.97);
+  --svg-color: rgb(65, 65, 65);
+  --link-color: #543fd7;
+  --opacity: 100%;
+}
+
+html[data-theme='dark'] {
+  --background-color: rgb(40, 40, 40);
+  --title-color: rgb(240, 240, 240);
+  --text-color: rgb(220, 220, 220);
+  --box-border: rgba(60, 60, 60, 0.75);
+  --box-background: rgba(52, 52, 52, 0.85);
+  --background-filter: invert(0.86);
+  --svg-color: rgb(240, 240, 240);
+  --opacity: 50%;
+  --link-color: #543fd7;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,10 +31,9 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   height: 100%;
-  background: rgb(235, 235, 235);
+  background: var(--background-color);
   margin: 0;
-  color: rgb(78, 78, 78);
-  transition: all 1s;
+  color: var(--text-color);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -44,6 +67,10 @@ img {
   height: auto;
 }
 
+.title svg {
+  fill: var(--svg-color);
+}
+
 .title p {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -51,7 +78,7 @@ img {
   line-height: 3;
   margin: 0;
   margin-left: 26px;
-  color: rgb(65, 65, 65);
+  color: var(--title-color);
 }
 
 .title b {
@@ -89,10 +116,9 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  border: 1px solid rgba(255, 255, 255, 0.788);
-  color: rgb(60, 60, 60);
-  background-color: rgba(245, 245, 246, 0.75);
-  transition: margin-top 2s;
+  border: 1px solid var(--box-border);
+  background-color: var(--box-background);
+  transition: margin-top 2s, background-color 1s linear, border 1s linear;
 }
 
 .background {
@@ -102,8 +128,10 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  filter: brightness(0.97);
+  filter: var(--background-filter);
+  opacity: var(--opacity);
   z-index: -1;
+  transition: all 1s;
 }
 
 .content {
@@ -138,7 +166,7 @@ img {
 .popup img {
   width: 31%;
   margin: 0 10px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 10px;
 }
 
@@ -148,7 +176,7 @@ img {
   width: 915px;
   height: 383px;
   background-color: rgb(0, 0, 0);
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 20px;
 }
 
@@ -186,7 +214,6 @@ img {
 
 .manual img,
 .player-button img {
-  border: 1px solid white;
   border-radius: 18px;
   margin-left: 5px;
   margin-top: 15px;
