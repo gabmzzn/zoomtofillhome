@@ -31,6 +31,10 @@ html {
   transition: background 1s;
 }
 
+.preload {
+  display: none;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   height: 100%;
