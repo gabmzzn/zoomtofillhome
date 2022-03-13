@@ -28,7 +28,7 @@ html {
   scroll-behavior: smooth;
   background: var(--background);
   background-size: cover;
-  transition: background 1s;
+  transition: background 0.5s;
 }
 
 .preload {
@@ -43,7 +43,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  transition: color 1s;
+  transition: color 0.5s;
 }
 
 h1, h2, h3 {
@@ -76,7 +76,7 @@ img {
 
 .title svg {
   fill: var(--svg-color);
-  transition: fill 1s;
+  transition: fill 0.5s;
 }
 
 .title p {
@@ -87,7 +87,7 @@ img {
   margin: 0;
   margin-left: 26px;
   color: var(--title-color);
-  transition: color 1s;
+  transition: color 0.5s;
 }
 
 .title b {
@@ -128,7 +128,7 @@ img {
   border: 1px;
   border-color: solid var(--box-border);
   background-color: var(--box-background);
-  transition: margin-top 2s, border-color 1s, background-color 1s;
+  transition: margin-top 2s, border-color 0.5s, background-color 0.5s;
 }
 
 .content {
