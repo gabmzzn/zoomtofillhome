@@ -23,7 +23,7 @@ html[data-theme='dark'] {
   --background-color: rgb(40, 40, 40);
   --title-color: rgb(240, 240, 240);
   --text-color: rgb(220, 220, 220);
-  --box-border: rgba(60, 60, 60, 0.75);
+  --box-border: rgba(65, 65, 65, 0.75);
   --box-background: rgba(52, 52, 52, 0.85);
   --svg-color: rgb(240, 240, 240);
   --store-border: rgb(60, 60, 60);
@@ -315,7 +315,7 @@ img {
   opacity: 100%;
 }
 
-@media only screen and (max-height: 900px) {
+@media only screen and (max-height: 720px) {
   html {
     zoom: 0.85;
   }
