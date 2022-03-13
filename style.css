@@ -3,42 +3,43 @@
 /* */
 
 html[data-theme='light'] {
-  --background-color: rgb(235, 235, 235);
+  --background: url(media/patternloop.jpg) no-repeat center center fixed;
+  /* --background-color: rgb(235, 235, 235); */
   --title-color: rgb(78, 78, 78);
   --text-color: rgb(65, 65, 65);
   --box-border: rgba(255, 255, 255, 0.75);
   --box-background: rgba(245, 245, 246, 0.75);
-  --background-filter: brightness(0.97);
   --svg-color: rgb(65, 65, 65);
   --link-color: #543fd7;
-  --opacity: 100%;
 }
 
 html[data-theme='dark'] {
-  --background-color: rgb(40, 40, 40);
+  --background: url(media/patternloopb.jpg) no-repeat center center fixed;
+  /* --background-color: rgb(40, 40, 40); */
   --title-color: rgb(240, 240, 240);
   --text-color: rgb(220, 220, 220);
   --box-border: rgba(60, 60, 60, 0.75);
   --box-background: rgba(52, 52, 52, 0.85);
-  --background-filter: invert(0.86);
   --svg-color: rgb(240, 240, 240);
-  --opacity: 50%;
   --link-color: #543fd7;
 }
 
 html {
   scroll-behavior: smooth;
+  background: var(--background);
+  background-size: cover;
+  transition: background 1s;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   height: 100%;
-  background: var(--background-color);
   margin: 0;
   color: var(--text-color);
   display: flex;
   align-items: center;
   flex-direction: column;
+  transition: color 1s;
 }
 
 h1, h2, h3 {
@@ -71,6 +72,7 @@ img {
 
 .title svg {
   fill: var(--svg-color);
+  transition: fill 1s;
 }
 
 .title p {
@@ -81,6 +83,7 @@ img {
   margin: 0;
   margin-left: 26px;
   color: var(--title-color);
+  transition: color 1s;
 }
 
 .title b {
@@ -118,21 +121,10 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  border: 1px solid var(--box-border);
+  border: 1px;
+  border-color: solid var(--box-border);
   background-color: var(--box-background);
-  transition: margin-top 2s;
-}
-
-.background {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  filter: var(--background-filter);
-  opacity: var(--opacity);
-  z-index: -1;
+  transition: margin-top 2s, border-color 1s, background-color 1s;
 }
 
 .content {
