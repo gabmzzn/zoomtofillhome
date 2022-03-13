@@ -7,12 +7,14 @@ html[data-theme='light'] {
   --background-color: rgb(235, 235, 235);
   --title-color: rgb(78, 78, 78);
   --text-color: rgb(65, 65, 65);
-  --box-border: rgba(255, 255, 255, 0.75);
+  --box-border: rgba(255, 255, 255);
   --box-background: rgba(245, 245, 246, 0.75);
   --svg-color: rgb(65, 65, 65);
   --store-border: rgb(210, 210, 210);
   --store-brightness: brightness(0.97);
   --store-background: url("media/chrome-store.png") no-repeat;
+  --theme-image: url(media/light.svg);
+  --support-image: url(media/logos.png);
   --link-color: #543fd7;
 }
 
@@ -27,10 +29,13 @@ html[data-theme='dark'] {
   --store-border: rgb(60, 60, 60);
   --store-brightness: brightness(1.2);
   --store-background: url("media/chrome-storeb.png") no-repeat;
+  --theme-image: url(media/dark.svg);
+  --support-image: url(media/logosb.png);
   --link-color: #543fd7;
 }
 
 html {
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   background-size: cover;
   background-image: var(--background);
@@ -45,8 +50,46 @@ html {
   display: none;
 }
 
+.theme-toggle {
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: var(--box-border);
+  background-color: var(--box-background);
+  background-image: var(--theme-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 5px 15px -5px rgb(0 0 0 / 0.5);
+  transition:
+    background-color 0.5s,
+    border-color 0.5s,
+    background-image 0.5s,
+    filter 0.5s;
+}
+
+
+.theme-toggle:hover {
+  filter: brightness(1.5);
+}
+
+.theme-toggle:not(:hover) {
+  background-color: var(--box-background);
+}
+
+.theme-toggle:active {
+  filter: brightness(0.9);
+  transition: filter 0.2s;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
   height: 100%;
   margin: 0;
   color: var(--text-color);
@@ -135,8 +178,8 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  border: 1px;
-  border-color: solid var(--box-border);
+  border: 1px solid;
+  border-color: var(--box-border);
   background-color: var(--box-background);
   transition: margin-top 2s, border-color 0.5s, background-color 0.5s;
 }
@@ -154,15 +197,17 @@ img {
   flex-wrap: wrap;
 }
 
-.support img {
-  display: block;
-  margin: auto;
-  width: 95%;
-  image-rendering: -webkit-optimize-contrast;
-}
-
 .support {
-  margin: 10px 0 30px 0;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  margin: auto;
+  margin-bottom: 30px;
+  background-image: var(--support-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 60px;
+  transition: background-image 0.5s;
 }
 
 .popup {
