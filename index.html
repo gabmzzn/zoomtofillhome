@@ -28,7 +28,7 @@
                 d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm14-6H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z">
             </path>
         </svg>
-        <p style="font-family: 'Roboto'"><b>Zoom to Fill</b> <a>Ultrawide Video</a></p>
+        <p style="font-family: 'Roboto'; user-select: none;"><b>Zoom to Fill</b> <a>Ultrawide Video</a></p>
     </div>
     <div class="main">
         <div class="box">
@@ -77,7 +77,7 @@
                     player button inserted on the video player, as well manually adjusting the zoom by
                     scrolling on the button too.</p>
                 <div class="video-example">
-                    <span id="state">Original</span>
+                    <span id="state" style="user-select: none;">Original</span>
                     <div class="button-group">
                         <svg width="60px" height="60px" viewBox="0 0 36 36">
                             <path
@@ -89,7 +89,7 @@
                 </div>
                 <div style="display: flex;justify-content: end;margin-right: 27px;">
                     <span style="font-size: 23px;"><b>Click to zoom</b> or <b>Scroll on the button</b> to manually
-                        adjust <img style="width: 25px;margin-bottom: 5px;" src="media/arrow.png"> </span>
+                        adjust <img class="arrow" src="media/arrow.png"> </span>
                 </div>
                 <div class="manual" style="display: flex;">
                     <p style="margin-top: 35px;">To use the manual adjusment, you have to <b>place your cursor on

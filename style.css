@@ -11,11 +11,11 @@ html[data-theme='light'] {
   --box-background: rgba(245, 245, 246, 0.75);
   --svg-color: rgb(65, 65, 65);
   --store-border: rgb(210, 210, 210);
-  --store-brightness: brightness(0.97);
-  --store-background: url("media/chrome-store.png") no-repeat;
+  --store-brightness: brightness(1.055);
+  --store-background: url("media/chrome-store.png");
   --theme-image: url(media/light.svg);
   --support-image: url(media/logos.png);
-  --link-color: #543fd7;
+  --arrow: none;
 }
 
 html[data-theme='dark'] {
@@ -28,10 +28,10 @@ html[data-theme='dark'] {
   --svg-color: rgb(240, 240, 240);
   --store-border: rgb(60, 60, 60);
   --store-brightness: brightness(1.2);
-  --store-background: url("media/chrome-storeb.png") no-repeat;
+  --store-background: url("media/chrome-storeb.png");
   --theme-image: url(media/dark.svg);
   --support-image: url(media/logosb.png);
-  --link-color: #543fd7;
+  --arrow: brightness(6.9) grayscale(1);
 }
 
 html {
@@ -76,7 +76,7 @@ html {
 
 
 .theme-toggle:hover {
-  filter: brightness(1.5);
+  filter: brightness(1.4);
 }
 
 .theme-toggle:not(:hover) {
@@ -84,8 +84,8 @@ html {
 }
 
 .theme-toggle:active {
-  filter: brightness(0.9);
-  transition: filter 0.2s;
+  filter: brightness(0.95);
+  transition: filter 0s;
 }
 
 ::-webkit-scrollbar {
@@ -262,6 +262,12 @@ img {
     0px 0px 3px black;
 }
 
+.arrow {
+  filter: var(--arrow);
+  margin-bottom: 5px;
+  width: 25px;
+}
+
 .store {
   margin: 10px 25px;
   border: 1px solid;
@@ -269,11 +275,13 @@ img {
   border-radius: 15px;
   width: 257px;
   height: 54px;
-  background: var(--store-background);
-  transition: background 0.5s, border-color 0.5s, filter 0.5s;
+  background-image: var(--store-background);
+  background-repeat: no-repeat;
+  transition: background-image 0.5s, border-color 0.5s, filter 0.5s;
 }
 
 .store:hover {
+  background-color: white;
   filter: var(--store-brightness);
 }
 
