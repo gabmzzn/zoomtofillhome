@@ -68,7 +68,6 @@ function zoom(command) {
 
 history.scrollRestoration = 'manual'
 
-
 // Theme switcher
 let targetTheme = ''
 let storedTheme = localStorage.getItem('theme')
@@ -85,7 +84,6 @@ document.getElementsByClassName("theme-toggle")[0].onclick = () => {
     localStorage.setItem('theme', currentTheme)
     document.documentElement.setAttribute('data-theme', currentTheme)
 }
-
 
 // Animation loading
 window.onload = () => {

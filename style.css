@@ -4,6 +4,7 @@
 
 html[data-theme='light'] {
   --background: url(media/patternloop.jpg);
+  --background-color: rgb(235, 235, 235);
   --title-color: rgb(78, 78, 78);
   --text-color: rgb(65, 65, 65);
   --box-border: rgba(255, 255, 255);
@@ -19,6 +20,7 @@ html[data-theme='light'] {
 
 html[data-theme='dark'] {
   --background: url(media/patternloopb.jpg);
+  --background-color: rgb(40, 40, 40);
   --title-color: rgb(240, 240, 240);
   --text-color: rgb(220, 220, 220);
   --box-border: rgba(65, 65, 65, 0.75);
