@@ -84,18 +84,3 @@ document.getElementsByClassName("theme-toggle")[0].onclick = () => {
     localStorage.setItem('theme', currentTheme)
     document.documentElement.setAttribute('data-theme', currentTheme)
 }
-
-// Animation loading
-window.onload = () => {
-    setTimeout(() => {
-        document.getElementsByTagName('html')[0].style = `
-        transition: background-image 0.5s;`
-        document.getElementsByClassName('title')[0].style = `
-        opacity: 100%;
-        transform: scale(1);`
-        document.getElementsByClassName('box')[0].style = `
-        margin-top: 0;`
-        document.getElementsByClassName('theme-toggle')[0].style = `
-        transform: translate(0%, 0%);`
-    }, 300)
-}

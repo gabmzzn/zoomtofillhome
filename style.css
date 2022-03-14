@@ -39,6 +39,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  transition: background-image 0.5s;
 }
 
 .preload {
@@ -63,7 +64,9 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 5px 15px -5px rgb(0 0 0 / 0.5);
-  transform: translate(0%, -200%);
+  /* transform: translate(0%, -200%); */
+  animation: load-theme-toggle 2s;
+  animation-fill-mode: forwards;
   transition: transform 2s,
     background-color 0.5s,
     border-color 0.5s,
@@ -165,14 +168,16 @@ img {
   width: 925px;
   margin: auto;
   display: flex;
+  animation: load-title 2s;
+  animation-fill-mode: forwards;
 }
 
 /* Animation */
-.title {
+/* .title {
   opacity: 0%;
   transform: scale(0.7);
   transition: transform 2s, opacity 2s;
-}
+} */
 
 .box {
   margin: 1000px 1.5% 160px 1.5%;
@@ -186,6 +191,8 @@ img {
   border: 1px solid;
   border-color: var(--box-border);
   background-color: var(--box-background);
+  animation: load-box 2s;
+  animation-fill-mode: forwards;
   transition: margin-top 2s, border-color 0.5s, background-color 0.5s;
 }
 
@@ -330,5 +337,37 @@ img {
 @media only screen and (max-height: 720px) {
   html {
     zoom: 0.85;
+  }
+}
+
+@keyframes load-box {
+  from {
+    margin-top: 1000px;
+  }
+
+  to {
+    margin-top: 0px;
+  }
+}
+
+@keyframes load-title {
+  from {
+    opacity: 0%;
+    transform: scale(0.7);
+  }
+
+  to {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+
+@keyframes load-theme-toggle {
+  from {
+    transform: translate(0%, -200%);
+  }
+
+  to {
+    transform: translate(0%, 0%);
   }
 }
