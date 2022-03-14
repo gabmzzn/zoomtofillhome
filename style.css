@@ -104,29 +104,6 @@ img {
   height: auto;
 }
 
-.title svg {
-  fill: var(--text-color);
-  transition: fill 0.7s;
-}
-
-.title p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 57px;
-  line-height: 3;
-  margin: 0;
-  margin-left: 26px;
-}
-
-.title b {
-  font-weight: 700;
-}
-
-.title a {
-  font-weight: 400;
-  margin-left: 6px;
-}
-
 .title {
   display: flex;
   justify-content: center;
@@ -137,6 +114,29 @@ img {
   display: flex;
   animation: load-title 2s;
   animation-fill-mode: forwards;
+}
+
+.title svg {
+  fill: var(--text-color);
+  transition: fill 0.7s;
+}
+
+.title p {
+  font-size: 57px;
+  line-height: 3;
+  margin: 0;
+  margin-left: 26px;
+}
+
+.title b {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.title a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-left: 6px;
 }
 
 .main {
