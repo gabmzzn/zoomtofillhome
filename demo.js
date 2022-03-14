@@ -87,13 +87,15 @@ document.getElementsByClassName("theme-toggle")[0].onclick = () => {
 
 // Animation loading
 window.onload = () => {
-    document.getElementsByClassName('title')[0].style = `
+    setTimeout(() => {
+        document.getElementsByClassName('title')[0].style = `
         opacity: 100%;
         transform: scale(1);`
-    document.getElementsByClassName('box')[0].style = `
+        document.getElementsByClassName('box')[0].style = `
         margin-top: 0;`
-    document.getElementsByClassName('theme-toggle')[0].style = `
+        document.getElementsByClassName('theme-toggle')[0].style = `
         transform: translate(0%, 0%);`
-    document.getElementsByTagName('html')[0].style = `
+        document.getElementsByTagName('html')[0].style = `
         transition: background-image 0.5s;`
+    }, 350)
 }
