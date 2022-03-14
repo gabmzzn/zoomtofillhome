@@ -4,7 +4,6 @@
 
 html[data-theme='light'] {
   --background: url(media/patternloop.jpg);
-  --background-color: rgb(255, 0, 0);
   --title-color: rgb(78, 78, 78);
   --text-color: rgb(65, 65, 65);
   --box-border: rgba(255, 255, 255);
@@ -20,7 +19,6 @@ html[data-theme='light'] {
 
 html[data-theme='dark'] {
   --background: url(media/patternloopb.jpg);
-  --background-color: rgb(40, 40, 40);
   --title-color: rgb(240, 240, 240);
   --text-color: rgb(220, 220, 220);
   --box-border: rgba(65, 65, 65, 0.75);
@@ -39,11 +37,9 @@ html {
   scroll-behavior: smooth;
   background-size: cover;
   background-image: var(--background);
-  background-color: var(--background-color);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  transition: background-image 0.5s;
 }
 
 .preload {
@@ -127,7 +123,7 @@ h2 {
 p, li {
   font-size: large;
   padding-left: 3px;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 li span {
@@ -213,8 +209,7 @@ img {
 .support {
   display: block;
   image-rendering: -webkit-optimize-contrast;
-  margin: auto;
-  margin-bottom: 30px;
+  margin: 45px auto;
   background-image: var(--support-image);
   background-repeat: no-repeat;
   background-position: center;

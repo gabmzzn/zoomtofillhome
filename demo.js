@@ -68,6 +68,25 @@ function zoom(command) {
 
 history.scrollRestoration = 'manual'
 
+var toggle = document.getElementsByClassName("theme-toggle")[0]
+
+var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light")
+if (storedTheme)
+    document.documentElement.setAttribute('data-theme', storedTheme)
+
+
+toggle.onclick = function () {
+    var currentTheme = document.documentElement.getAttribute("data-theme")
+    var targetTheme = "dark"
+
+    if (currentTheme === "dark") {
+        targetTheme = "light"
+    }
+
+    document.documentElement.setAttribute('data-theme', targetTheme)
+    localStorage.setItem('theme', targetTheme)
+}
+
 window.onload = () => {
     document.getElementsByClassName('title')[0].style = `
         opacity: 100%;
@@ -76,4 +95,6 @@ window.onload = () => {
         margin-top: 0;`
     document.getElementsByClassName('theme-toggle')[0].style = `
         transform: translate(0%, 0%);`
+    document.getElementsByTagName('html')[0].style = `
+        transition: background-image 0.5s;`
 }
