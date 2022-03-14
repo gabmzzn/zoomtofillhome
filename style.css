@@ -141,7 +141,7 @@ img {
   animation-fill-mode: forwards;
 }
 
-.box {
+.main {
   margin: 1000px 1.5% 160px 1.5%;
   padding: 44px 75px 75px 75px;
   box-shadow: 0 45px 75px -25px rgb(0 0 0 / 40%);
