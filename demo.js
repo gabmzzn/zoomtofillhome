@@ -69,13 +69,13 @@ function zoom(command) {
 history.scrollRestoration = 'manual'
 
 // Theme switcher
-let targetTheme = ''
 let storedTheme = localStorage.getItem('theme')
-if (storedTheme) targetTheme = storedTheme
-else targetTheme = window.matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light"
-
-if (storedTheme) document.documentElement.setAttribute('data-theme', storedTheme)
 let currentTheme = document.documentElement.getAttribute("data-theme")
+
+if (storedTheme == 'dark' || storedTheme == 'light') currentTheme = storedTheme
+else currentTheme = window.matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light"
+
+document.documentElement.setAttribute('data-theme', currentTheme)
 
 document.getElementsByClassName("theme-toggle")[0].onclick = () => {
     if (currentTheme == 'light') currentTheme = 'dark'
