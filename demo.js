@@ -97,5 +97,5 @@ window.onload = () => {
         transform: translate(0%, 0%);`
         document.getElementsByTagName('html')[0].style = `
         transition: background-image 0.5s;`
-    }, 350)
+    }, 1000)
 }
