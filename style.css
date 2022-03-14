@@ -119,12 +119,11 @@ img {
 }
 
 .title b {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
 .title a {
-  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   margin-left: 6px;
 }
 
