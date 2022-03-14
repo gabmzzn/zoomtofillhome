@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
 
-/* */
-
 html[data-theme='light'] {
   --background-image: url(media/patternloop.jpg);
   --background-color: rgb(235, 235, 235);
@@ -71,31 +69,6 @@ html {
     filter 0.5s;
 }
 
-
-.theme-toggle:hover {
-  filter: brightness(1.4);
-}
-
-.theme-toggle:not(:hover) {
-  background-color: var(--box-background);
-}
-
-.theme-toggle:active {
-  filter: brightness(0.95);
-  transition: filter 0s;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(100, 100, 100, 0.3);
-  border-radius: 5px;
-  transition: all 0.5s;
-}
-
-
 body {
   height: 100%;
   margin: 0;
@@ -135,7 +108,6 @@ img {
 
 .title svg {
   fill: var(--text-color);
-  transition: fill 0.5s;
 }
 
 .title p {
@@ -167,13 +139,6 @@ img {
   animation: load-title 2s;
   animation-fill-mode: forwards;
 }
-
-/* Animation */
-/* .title {
-  opacity: 0%;
-  transform: scale(0.7);
-  transition: transform 2s, opacity 2s;
-} */
 
 .box {
   margin: 1000px 1.5% 160px 1.5%;
@@ -225,7 +190,6 @@ img {
 .popup img {
   width: 31%;
   margin: 0 10px;
-  /* border: 1px solid white; */
   border-radius: 10px;
 }
 
@@ -235,7 +199,6 @@ img {
   width: 868px;
   height: 362px;
   background-color: rgb(0, 0, 0);
-  /* border: 1px solid white; */
   border-radius: 20px;
 }
 
@@ -328,6 +291,29 @@ img {
 
 .button-group svg:hover {
   opacity: 100%;
+}
+
+.theme-toggle:hover {
+  filter: brightness(1.4);
+}
+
+.theme-toggle:not(:hover) {
+  background-color: var(--box-background);
+}
+
+.theme-toggle:active {
+  filter: brightness(0.95);
+  transition: filter 0s;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.3);
+  border-radius: 5px;
+  transition: all 0.5s;
 }
 
 @media only screen and (max-height: 720px) {
