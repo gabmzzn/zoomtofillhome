@@ -94,4 +94,6 @@ window.onload = () => {
         transform: scale(1);`
     document.getElementsByClassName('box')[0].style = `
         margin-top: 0;`
+    document.getElementsByClassName('theme-toggle')[0].style = `
+        transform: translate(0%, 0%);`
 }
