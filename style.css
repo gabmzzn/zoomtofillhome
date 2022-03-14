@@ -157,19 +157,6 @@ img {
   transition: margin-top 2s, border-color 0.5s, background-color 0.5s;
 }
 
-.content {
-  position: relative;
-}
-
-.main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .support {
   display: block;
   image-rendering: -webkit-optimize-contrast;
