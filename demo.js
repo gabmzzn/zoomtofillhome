@@ -68,25 +68,26 @@ function zoom(command) {
 
 history.scrollRestoration = 'manual'
 
-var toggle = document.getElementsByClassName("theme-toggle")[0]
 
-var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light")
-if (storedTheme)
-    document.documentElement.setAttribute('data-theme', storedTheme)
+// Theme switcher
+let targetTheme = ''
+let storedTheme = localStorage.getItem('theme')
+if (storedTheme) targetTheme = storedTheme
+else targetTheme = window.matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light"
 
+if (storedTheme) document.documentElement.setAttribute('data-theme', storedTheme)
+let currentTheme = document.documentElement.getAttribute("data-theme")
 
-toggle.onclick = function () {
-    var currentTheme = document.documentElement.getAttribute("data-theme")
-    var targetTheme = "dark"
+document.getElementsByClassName("theme-toggle")[0].onclick = () => {
+    if (currentTheme == 'light') currentTheme = 'dark'
+    else currentTheme = 'light'
 
-    if (currentTheme === "dark") {
-        targetTheme = "light"
-    }
-
-    document.documentElement.setAttribute('data-theme', targetTheme)
-    localStorage.setItem('theme', targetTheme)
+    localStorage.setItem('theme', currentTheme)
+    document.documentElement.setAttribute('data-theme', currentTheme)
 }
 
+
+// Animation loading
 window.onload = () => {
     document.getElementsByClassName('title')[0].style = `
         opacity: 100%;
