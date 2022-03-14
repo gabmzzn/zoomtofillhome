@@ -94,22 +94,12 @@ html {
   width: 10px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(100, 100, 100, 0.3);
   border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(150, 150, 150, 0.75);
   transition: all 0.5s;
 }
+
 
 body {
   height: 100%;
