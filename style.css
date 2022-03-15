@@ -88,34 +88,6 @@ html {
   transition: background-image 0.7s, color 0.7s, filter 0.7s;
 }
 
-.theme-toggle {
-  width: 20px;
-  height: 20px;
-  margin: 10px 20px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  border-radius: 30px;
-  border: 1px solid;
-  border-color: var(--box-border);
-  background-color: var(--box-background);
-  background-image: var(--theme-icon);
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 0 5px 15px -5px rgb(0 0 0 / 0.5);
-  /* transform: translate(0%, -200%); */
-  animation: load-theme-toggle 2s;
-  animation-fill-mode: forwards;
-  transition:
-    background-color 0.7s,
-    border-color 0.7s,
-    background-image 0.7s,
-    filter 0.7s;
-}
-
 body {
   height: 100%;
   margin: 0;
@@ -188,6 +160,34 @@ img {
   margin-left: 6px;
 }
 
+.theme-toggle {
+  width: 20px;
+  height: 20px;
+  margin: 10px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: var(--box-border);
+  background-color: var(--box-background);
+  background-image: var(--theme-icon);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 5px 15px -5px rgb(0 0 0 / 0.5);
+  /* transform: translate(0%, -200%); */
+  animation: load-theme-toggle 2s;
+  animation-fill-mode: forwards;
+  transition:
+    background-color 0.7s,
+    border-color 0.7s,
+    background-image 0.7s,
+    filter 0.7s;
+}
+
 .main {
   margin: 1000px 1.5% 160px 1.5%;
   padding: 44px 75px 75px 75px;
@@ -199,7 +199,8 @@ img {
   flex-wrap: nowrap;
   border: 1px solid;
   border-color: var(--box-border);
-  background-color: var(--box-background);
+  background-color: transparent;
+  backdrop-filter: blur(12px);
   animation: load-box 2s;
   animation-fill-mode: forwards;
   transition:
