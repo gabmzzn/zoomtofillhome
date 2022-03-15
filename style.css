@@ -419,6 +419,10 @@ img {
     font-size: 70px;
   }
 
+  .manual img {
+    display: none;
+  }
+
   .background {
     background-image: none;
   }
@@ -429,7 +433,6 @@ img {
     padding: 25px 50px 15px 160px;
     width: 100%;
     box-shadow: none;
-    margin-bottom: 0;
     animation: none;
   }
 
