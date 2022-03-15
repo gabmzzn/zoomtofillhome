@@ -402,8 +402,8 @@ img {
   }
 
   .video-example {
-    width: 1000px;
-    height: 420px;
+    width: 1080px;
+    height: 455px;
   }
 
   .info1 {
@@ -442,11 +442,11 @@ img {
   }
 
   .store {
-    transform: scale(1.4);
-    margin: 30px auto;
+    transform: scale(1.6);
+    margin: 40px auto;
   }
 
   .support {
-    height: 67px;
+    height: 80px;
   }
 }
