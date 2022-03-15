@@ -415,7 +415,13 @@ img {
   }
 
   .title {
-    height: 100px;
+    height: 140px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .title p {
+    font-size: 70px;
   }
 
   /* .background {
@@ -428,6 +434,7 @@ img {
     padding: 15px 40px;
     width: 93%;
     box-shadow: none;
+    margin-bottom: 0;
   }
 
   .store-link {
