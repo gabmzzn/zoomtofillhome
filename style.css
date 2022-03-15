@@ -32,7 +32,7 @@
 
 html[data-theme='light'] {
   --background-image: url(media/patternloop.jpg);
-  --background-filter: brightness(0.97), invert(0);
+  --background-filter: brightness(0.97) invert(0);
   --background-opacity: 100%;
   --background-color: rgb(235, 235, 235);
   --text-color: rgb(70, 70, 70);
@@ -62,14 +62,6 @@ html[data-theme='dark'] {
   --arrow: brightness(6.9) grayscale(1);
 }
 
-html {
-  font-family: 'Poppins', 'Arial', sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  scroll-behavior: smooth;
-  transition: color 0.7s;
-}
-
 .background {
   object-fit: cover;
   width: 100%;
@@ -85,16 +77,20 @@ html {
   background-attachment: fixed;
   background-position: center;
   filter: var(--background-filter);
-  transition: background-image 0.7s, color 0.7s, filter 0.7s;
+  transition: background-image 0.7s, color 0.7s, filter 0.7s, opacity 0.7s;
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
   height: 100%;
   margin: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow: overlay;
+  background-color: var(--background-color);
+  transition: color 0.7s, background-color 0.7s;
 }
 
 h1, h2, h3 {
@@ -178,7 +174,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 5px 15px -5px rgb(0 0 0 / 0.5);
-  /* transform: translate(0%, -200%); */
   animation: load-theme-toggle 2s;
   animation-fill-mode: forwards;
   transition:
