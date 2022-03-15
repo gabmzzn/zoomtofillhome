@@ -357,12 +357,6 @@ img {
   border-radius: 5px;
 }
 
-@media only screen and (max-height: 720px) {
-  html {
-    zoom: 0.85;
-  }
-}
-
 @keyframes load-box {
   from {
     margin-top: 1000px;
@@ -395,7 +389,7 @@ img {
   }
 }
 
-@media only screen and (orientation: portrait) {
+@media screen and (orientation: portrait) {
 
   .button-group {
     display: none;
