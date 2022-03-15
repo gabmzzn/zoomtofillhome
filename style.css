@@ -184,7 +184,7 @@ img {
 }
 
 .main {
-  margin: 1000px 1.5% 160px 1.5%;
+  margin: 0px 1.5% 160px 1.5%;
   padding: 44px 75px 75px 75px;
   box-shadow: 0 45px 75px -25px rgb(0 0 0 / 40%);
   border-radius: 10px;
@@ -412,23 +412,25 @@ img {
     height: 140px;
     width: 100%;
     padding: 20px 55px;
+    animation: none;
   }
 
   .title p {
     font-size: 70px;
   }
 
-  /* .background {
+  .background {
     background-image: none;
-  } */
+  }
 
   .main {
-    /* background: none; */
+    background: none;
     border: none;
     padding: 25px 50px 15px 160px;
     width: 100%;
     box-shadow: none;
     margin-bottom: 0;
+    animation: none;
   }
 
   .store-link {
