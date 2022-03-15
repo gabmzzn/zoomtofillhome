@@ -431,8 +431,8 @@ img {
   .main {
     /* background: none; */
     border: none;
-    padding: 15px 40px;
-    width: 93%;
+    padding: 25px 50px 15px 160px;
+    width: 100%;
     box-shadow: none;
     margin-bottom: 0;
   }
