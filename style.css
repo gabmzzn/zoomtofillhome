@@ -387,3 +387,45 @@ img {
     transform: translate(0%, 0%);
   }
 }
+
+@media only screen and (orientation: portrait) {
+
+  .button-group {
+    display: none;
+  }
+
+  .video-example {
+    width: 1000px;
+    height: 420px;
+  }
+
+  .info1 {
+    display: none;
+  }
+
+  .theme-toggle {
+    display: none;
+  }
+
+  .title {
+    height: 100px;
+  }
+
+  .background {
+    background-image: none;
+  }
+
+  .main {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: auto;
+    width: 1000px;
+    box-shadow: none;
+  }
+
+  .store {
+    display: block;
+    margin: auto;
+  }
+}
