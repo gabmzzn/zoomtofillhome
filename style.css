@@ -412,7 +412,7 @@ img {
     height: 140px;
     width: 100%;
     padding: 20px 55px;
-    animation: none;
+    /* animation: none; */
   }
 
   .title p {
