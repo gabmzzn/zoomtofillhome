@@ -199,8 +199,7 @@ img {
   flex-wrap: nowrap;
   border: 1px solid;
   border-color: var(--box-border);
-  background-color: transparent;
-  backdrop-filter: blur(12px);
+  background-color: var(--box-background);
   animation: load-box 2s;
   animation-fill-mode: forwards;
   transition:
