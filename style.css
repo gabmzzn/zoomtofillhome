@@ -260,6 +260,13 @@ img {
   width: 25px;
 }
 
+.store-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
 .store {
   margin: 10px 25px;
   border: 1px solid;
@@ -424,8 +431,16 @@ img {
     box-shadow: none;
   }
 
-  .store {
+  .store-link {
     display: block;
-    margin: auto;
+  }
+
+  .store {
+    transform: scale(1.4);
+    margin: 30px auto;
+  }
+
+  .support {
+    height: 67px;
   }
 }
