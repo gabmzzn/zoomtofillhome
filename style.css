@@ -93,7 +93,9 @@ body {
   transition: color 0.7s, background-color 0.7s;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 15px 0 -5px 0;
 }
 
@@ -105,7 +107,8 @@ h2 {
   font-size: 24px;
 }
 
-p, li {
+p,
+li {
   font-size: large;
   padding-left: 2px;
   line-height: 1.75;
@@ -447,4 +450,158 @@ img {
   .support {
     height: 80px;
   }
+}
+
+/* 
+h1,
+h2,
+h3 {
+  margin: 15px 0 -5px 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p,
+li {
+  font-size: large;
+  padding-left: 2px;
+  line-height: 1.75;
+}
+
+li span {
+  position: relative;
+  left: -7px;
+}
+
+img {
+  width: auto;
+  height: auto;
+} */
+
+.support {
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  margin: 45px auto;
+  background-image: var(--logos);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 60px;
+  transition: background-image 0.7s;
+}
+
+@media screen and (orientation: portrait) {
+
+  .button-group {
+    display: none;
+  }
+
+  .video-example {
+    width: 1080px;
+    height: 455px;
+  }
+
+  .info1 {
+    display: none;
+  }
+
+  .theme-toggle {
+    display: none;
+  }
+
+  .title {
+    height: 140px;
+    width: 100%;
+    padding: 20px 50px;
+    /* animation: none; */
+  }
+
+  .title p {
+    font-size: 70px;
+  }
+
+  .manual img {
+    display: none;
+  }
+
+  .background {
+    background-image: none;
+  }
+
+  .main {
+    background: none;
+    border: none;
+    padding: 25px 50px 15px 160px;
+    width: 100%;
+    box-shadow: none;
+    animation: none;
+  }
+
+  .store-link {
+    display: block;
+  }
+
+  .store {
+    transform: scale(1.6);
+    margin: 40px auto;
+  }
+
+  .support {
+    height: 80px;
+  }
+}
+
+.shortcuts img,
+.persistent img,
+.manual img,
+.player-button img {
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 18px;
+  margin-left: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.paypal {
+  background: transparent;
+  filter: brightness(1.15);
+  color: white;
+  border: 1px solid #8a8a8a5d;
+  padding: 0 15px;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: default;
+  margin-left: 3px;
+  margin-right: 3px;
+  text-decoration: none;
+  width: 210px;
+  padding: 0px 12px 0px 18px;
+  line-height: 0px;
+  border-radius: 100px;
+}
+
+.paypal:hover {
+  background: rgba(0, 140, 255, 0.25);
+  transition: all 400ms;
+}
+
+.paypal:not(:hover) {
+  background: transparent;
+  transition: all 400ms;
+}
+
+.paypal:active {
+  background: rgba(0, 140, 255, 0.5);
+  transition: all 100ms;
 }
